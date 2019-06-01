@@ -1,10 +1,10 @@
 <template>
-    <p>teste</p>
+    
 </template>
 
 <script>
     export default {
-        name: "login_screen"
+        name: "card__highschool"
     }
 </script>
 

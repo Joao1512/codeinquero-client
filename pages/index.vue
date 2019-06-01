@@ -1,16 +1,21 @@
 <template>
+  <bheadercomp></bheadercomp>
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
+  import bheadercomp from '~/components/between_header-and-component.vue'
 
   export default {
     components: {
-      Logo
+      bheadercomp
     }
   }
 </script>
 
 <style>
-
+  body {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
 </style>

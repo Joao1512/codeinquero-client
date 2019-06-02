@@ -299,7 +299,7 @@
   }
 
   .modal__subtitle {
-    margin-top: -12px;
+    margin-top: 6px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;

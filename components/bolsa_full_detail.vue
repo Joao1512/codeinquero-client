@@ -189,7 +189,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 70vw;
     height: 56px;
     background: #0A7447;
     border-radius: 10px;

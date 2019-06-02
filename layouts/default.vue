@@ -1,24 +1,26 @@
 <template>
   <div>
-    <navbar></navbar>
-    <nuxt/>
+    <Navigation></Navigation>
+    <nuxt />
   </div>
 </template>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
 </style>
 
 <script>
-  import navbar from '~/components/navbar.vue'
-  export default {
-    components: {
-      navbar
-    }
+import Navigation from "~/components/Navigation.vue";
+export default {
+  components: {
+    Navigation
   }
+};
 </script>

@@ -1,10 +1,10 @@
 <template>
   <div class="card__image-wrapper">
-    <img class="card__logo" src="~/assets/unip_logo.png" alt="Logo" />
+    <img class="card__logo" :src="input.logo_path" alt="Logo" />
 
     <div class="card__divider"></div>
 
-    <p class="card__title">Engenharia de Computação</p>
+    <p class="card__title">{{ input.title }}</p>
 
     <div class="card__divider"></div>
 
@@ -14,27 +14,30 @@
         src="https://img.icons8.com/cotton/50/000000/olympic-medal-silver.png"
         alt="Medal"
       />
-      <p class="evaluations__text">236 avaliações de alunos</p>
+      <p class="evaluations__text">
+        {{ input.evaluations }} avaliações de alunos
+      </p>
     </div>
 
     <div class="card__divider"></div>
 
     <div class="discount">
       <p class="card__text">
-        Bolsas de até <span class="card__text--green">80%</span>
+        Bolsas de até
+        <span class="card__text--green">{{ input.discount }}%</span>
       </p>
     </div>
 
     <div class="price">
       <p class="card__text">
         A partir de
-        <span class="card__text--green">R$ 137</span>
+        <span class="card__text--green">R$ {{ input.startPrice }}</span>
         <span class="card__text--green card__text--small">/mês</span>
       </p>
     </div>
 
-    <nuxt-link :onclick="setCurrentCourse()" to="/course">
-      <button class="card__action">
+    <nuxt-link to="/course">
+      <button @click="setCurrentCourse()" class="card__action">
         Ver detalhes da bolsa
       </button>
     </nuxt-link>
@@ -55,6 +58,7 @@
 }
 
 .card__logo {
+  object-fit: contain;
   width: 150px;
   height: 63px;
   margin-top: 20px;
@@ -131,11 +135,11 @@
 <script>
 export default {
   name: "UniversityCard",
+  props: ["input"],
   methods: {
     setCurrentCourse() {
-      this.$store.commit("setCurrentCourse", {
-        title: "UNIP - Engenharia de Computação"
-      });
+      console.log(this.input);
+      this.$store.commit("setCurrentCourse", this.input);
     }
   }
 };

@@ -87,6 +87,11 @@
         </a>
         <img class="benefits__img" src="~/assets/right-arrow.png"/>
       </div>
+      <div class="bolsagarantida">
+        <img class="bolsagarantida-img" src="https://d8dhf3oq7c1wo.cloudfront.net/img/1d4ab68.png" />
+        <p class="bolsagarantida-title">POLÍTICA BOLSA GARANTIDA</p>
+        <p class="bolsagarantida-subtitle">Não se matriculou? Não ganhou ou não usou sua bolsa? Devolvemos seu valor pago, sem amolação.</p>
+      </div>
       <div class="regras_e_avisos">
         <p class="regras_e_avisos-text">Regras e Avisos</p>
       </div>
@@ -192,6 +197,32 @@
 
   .router {
     text-decoration: none;
+  }
+
+  .bolsagarantida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+  }
+
+  .bolsagarantida-title {
+    margin-top: 8px;
+    color: #05869b;
+    font-size: 14px;
+  }
+
+  .bolsagarantida-subtitle {
+    margin-top: 8px auto 12px auto;
+    text-align: center;
+    color: #767676;
+    font-size: 12px;
+  }
+
+  .bolsagarantida-img {
+    width: 23px;
+    height: 23px;
   }
 
   .modal__logo {
@@ -478,7 +509,7 @@
     border-radius: 10px;
     margin: -268px auto 0 auto;
     width: 330px;
-    height: 360px;
+    height: 450px;
   }
 
   .card__details-header {

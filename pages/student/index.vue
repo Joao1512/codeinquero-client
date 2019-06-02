@@ -11,15 +11,23 @@
 
       <div class="profile__info">
         <div class="profile__text-wrapper">
+          <p class="profile__text profile__text--big">Status: Apto</p>
+        </div>
+
+        <div class="profile__text-wrapper">
           <p class="profile__text">Média: 8,6</p>
         </div>
 
         <div class="profile__text-wrapper">
-          <p class="profile__text">Status: Apto</p>
+          <p class="profile__text">Frequência: 93%</p>
         </div>
 
         <div class="profile__text-wrapper">
-          <p class="profile__text profile__text--big">Solicitar Estágio</p>
+          <nuxt-link
+            to="/student/internship-list"
+            class="profile__text profile__text--big"
+            >Solicitar Estágio</nuxt-link
+          >
         </div>
       </div>
     </div>
@@ -85,7 +93,7 @@
   padding: 10px 15px;
   background: #05869b;
   border-radius: 10px;
-  align-content: center;
+  justify-content: center;
 }
 
 .profile__text--big {

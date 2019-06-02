@@ -20,43 +20,18 @@
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-.space {
-  margin-top: 165px;
-}
-.title1 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-
-  color: rgba(0, 0, 0, 0.53);
-}
 .header {
   align-items: stretch;
-}
-
-.flex-start {
-  align-items: flex-start;
-}
-
-.flex-end {
-  align-items: flex-end;
 }
 
 .center {
   align-items: center;
 }
+
 .justify-content-center {
   justify-content: center;
 }
 
-.baseline {
-  align-items: baseline;
-}
-
-/* Flex Container */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -67,11 +42,6 @@
   flex-direction: column;
 }
 
-.row {
-  flex-direction: row;
-}
-
-/* Flex Item */
 .header__title {
   flex: 1;
   padding: 17px 15px;
@@ -81,6 +51,7 @@
   font-size: 1em;
   font-family: Roboto;
 }
+
 .item2 {
   flex: 1;
   padding: 1px 15px;
@@ -102,23 +73,12 @@
   padding-top: 20px;
 }
 
-.alinhamento-central {
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-}
-
-.alinhamento-central .header__title {
+.header__title {
   flex: 0;
   padding: 10px;
-}
-.nowrap {
-  flex-wrap: nowrap;
 }
 </style>
 
 <script>
-export default {
-  name: "mainempregadorcomponent"
-};
+export default {};
 </script>

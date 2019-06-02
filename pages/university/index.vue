@@ -11,22 +11,29 @@
 
       <div class="profile__info">
         <div class="profile__text-wrapper">
-          <p class="profile__text">
+          <nuxt-link to="/university/job-form" class="profile__text">
             Nova Vaga
             <img
               class="profile__text--image"
               src="~/assets/plus.png"
               alt="Image"
             />
-          </p>
+          </nuxt-link>
         </div>
 
         <div class="profile__text-wrapper">
-          <p class="profile__text">Candidatos: 0</p>
+          <nuxt-link to="/university/student-list" class="profile__text">
+            Candidatos: 0
+          </nuxt-link>
         </div>
 
         <div class="profile__text-wrapper">
-          <p class="profile__text profile__text--big">Vagas Anunciadas</p>
+          <nuxt-link
+            to="/university/job-list"
+            class="profile__text profile__text--big"
+          >
+            Vagas Anunciadas
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -92,7 +99,7 @@
   padding: 10px 15px;
   background: #05869b;
   border-radius: 10px;
-  align-content: center;
+  justify-content: center;
 }
 
 .profile__text--image {

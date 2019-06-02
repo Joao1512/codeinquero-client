@@ -344,7 +344,5 @@ input:checked ~ .tab-content {
 </style>
 
 <script>
-  export default {
-    name: "JobList"
-  };
+export default {};
 </script>

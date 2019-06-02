@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card__image-wrapper">
     <img class="card__logo" src="~/assets/unip_logo.png" alt="Logo" />
 
     <div class="card__divider"></div>
@@ -42,7 +42,7 @@
 </template>
 
 <style scoped>
-.card {
+.card__image-wrapper {
   width: 300px;
   height: 390px;
   display: flex;

@@ -75,9 +75,7 @@ export default {
       }
     },
     currentCourseSelected: function() {
-      if (this.routePathLabel) {
-        return this.routePathLabel && this.$store.state.currentCourse;
-      }
+      return this.$route.name === "course" && this.$store.state.currentCourse;
     }
   }
 };

@@ -88,12 +88,53 @@
         <img class="benefits__img" src="~/assets/right-arrow.png"/>
       </div>
       <div class="bolsagarantida">
-        <img class="bolsagarantida-img" src="https://d8dhf3oq7c1wo.cloudfront.net/img/1d4ab68.png" />
+        <img class="bolsagarantida-img" src="https://d8dhf3oq7c1wo.cloudfront.net/img/1d4ab68.png"/>
         <p class="bolsagarantida-title">POLÍTICA BOLSA GARANTIDA</p>
-        <p class="bolsagarantida-subtitle">Não se matriculou? Não ganhou ou não usou sua bolsa? Devolvemos seu valor pago, sem amolação.</p>
+        <p class="bolsagarantida-subtitle">Não se matriculou? Não ganhou ou não usou sua bolsa? Devolvemos seu valor
+          pago, sem amolação.</p>
       </div>
-      <div class="regras_e_avisos">
-        <p class="regras_e_avisos-text">Regras e Avisos</p>
+      <label class="btn" for="modal-2">
+        <div class="regras_e_avisos">
+          <p class="regras_e_avisos-text">Regras e Avisos</p>
+        </div>
+      </label>
+      <input class="modal-state" id="modal-2" type="checkbox"/>
+      <div class="modal">
+        <label class="modal__bg" for="modal-2"></label>
+        <div class="modal__inner">
+          <label class="modal__close" for="modal-2"></label>
+          <p class="modal__title">Regras e Avisos</p>
+          <p class="modal__subtitle">
+            Leia os avisos antes de adquirir sua bolsa
+          </p>
+          <div class="avisos_importantes">
+            <img class="avisos_importantes-img" src="~/assets/warning.png">
+            <p class="avisos_importantes-text">Avisos importantes</p>
+          </div>
+          <p class="modal__text">• A <strong>primeira mensalidade</strong> gratuita equivale à matrícula</p>
+          <p class="modal__text">• O desconto se aplica a <strong>todas as mensalidades e rematrículas,</strong> com
+            exceção das
+            <strong>disciplinas em que o aluno ficar de dependência</strong>
+          </p>
+          <p class="modal__text">• Dos 65% de desconto, o Quero bolsa garante <strong>52% até o final do curso.</strong>
+            O desconto
+            restante é de <strong>responsabilidade da Instituição</strong> e poderá ou não ser alterado, conforme
+            seus critérios internos</p>
+          <div class="avisos_importantes">
+            <img class="avisos_importantes-img" src="~/assets/atention.png">
+            <p class="avisos_importantes-text">Regras e Observações</p>
+          </div>
+          <p class="modal__title"><strong>Quem pode ter a bolsa?</strong></p>
+          <p class="modal__text">• Alunos que irão ingressar em sua <strong>primeira graduação</strong>
+          </p>
+          <p class="modal__text">• Alunos que já tenham graduação completa em <strong>qualquer outra instituição</strong></p>
+          <p class="modal__title"><strong>Quem não pode ter a bolsa?</strong></p>
+          <p class="modal__text">• Alunos <strong>já matriculados</strong> ou que tenha <strong>vínculo estudantil</strong> com
+          esta instituição </p>
+          <p class="modal__text">• Alunos transferidos de <strong>outra instituição</strong></p>
+          <p class="modal__text">• Alunos já matriculados <strong>nesta instituição</strong> que trancaram ou desistiram do curso</p>
+          <p class="modal__text">• Alunos que já tenham graduação completa <strong>nesta instituição</strong></p>
+        </div>
       </div>
       <label class="btn" for="modal-1">
         <div class="want_this_estagio">
@@ -181,10 +222,32 @@
     margin: 20px 0 0 15px;
   }
 
+  .avisos_importantes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+  }
+
+  .avisos_importantes-img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .avisos_importantes-text {
+    margin-left: 10px;
+  }
+
   .bolsa__arrow-img {
     width: 18px;
     height: 18px;
     margin-right: 5px;
+  }
+
+  .modal__text {
+    font-size: 14px;
+    margin: 20px auto;
   }
 
   .bolsa__title-text {

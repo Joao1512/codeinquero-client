@@ -37,14 +37,14 @@
   .quero__icon {
     width: 94px;
     height: 49px;
-    margin: 10px 23vw 0 0;
+    margin: 10px 30vw 0 0;
   }
   .header__content-icons {
     display: flex;
     flex-direction: row;
     font-family: Roboto;
     font-style: normal;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: normal;
     font-size: 12px;
     color: #5A5A5A;

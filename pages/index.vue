@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <div class="content">
+    <div class="profile">
       <p class="content__title">Bolsas de Estudo com Estágio Garantido</p>
       <div class="content__cards">
         <div class="content__card-wrapper">
@@ -16,7 +16,11 @@
       >
         Veja todas as faculdades
       </a>
-      <img class="footer__link-img" src="~/assets/right-arrow.png" />
+      <img
+        class="footer__link-img"
+        src="~/assets/right-arrow.png"
+        alt="Arrow"
+      />
     </div>
   </div>
 </template>

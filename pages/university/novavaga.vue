@@ -1,19 +1,18 @@
 <template>
   <div>
-    <statusalunocomponent></statusalunocomponent>
-    <nuxt/>
+    <novavagacomponent></novavagacomponent>
   </div>
 </template>
 
-<style>
+<style scoped>
   @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 </style>
 
 <script>
-  import statusalunocomponent from '~/components/statusalunocomponent.vue'
+  import novavagacomponent from '~/components/JobForm.vue'
   export default {
     components: {
-      statusalunocomponent
+      novavagacomponent
     }
   }
 </script>

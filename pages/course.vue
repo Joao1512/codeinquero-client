@@ -2,14 +2,18 @@
   <div>
     <nuxt-link class="footer__link" to="/">
       <div class="discount__title">
-        <img class="discount__arrow" src="~/assets/right-arrow.png" alt="Arrow"/>
+        <img
+          class="discount__arrow"
+          src="~/assets/right-arrow.png"
+          alt="Arrow"
+        />
         <p class="discount__title">Cursos e bolsas na UNIP</p>
       </div>
     </nuxt-link>
 
     <p class="bolsa__subtitle-text">Ciência da Computação na UNIP</p>
 
-    <div class="content">
+    <div class="profile">
       <div class="cards__wrapper">
         <div class="card">
           <img class="img2" src="~/assets/unip_logo.png" />
@@ -93,7 +97,7 @@
   margin-left: 15px;
 }
 
-.content {
+.profile {
   display: flex;
   flex-direction: column;
   align-items: center;

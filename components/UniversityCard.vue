@@ -44,7 +44,7 @@
 <style scoped>
 .card__image-wrapper {
   width: 300px;
-  height: 390px;
+  height: 400px;
   display: flex;
   margin: 0 auto;
   border-radius: 4px;
@@ -60,7 +60,7 @@
 }
 
 .card__divider {
-  width: 80%;
+  width: 60%;
   margin: 20px auto;
   border: 1px solid #c1c1c1;
 }

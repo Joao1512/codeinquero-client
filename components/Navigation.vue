@@ -21,9 +21,10 @@
   background-color: #ffffff;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-content: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .navigation__link {
@@ -35,26 +36,32 @@
 }
 
 .navigation__logo {
+  display: none;
+  justify-content: center;
+  align-items: center;
   width: 94px;
   height: 49px;
 }
 
 .navigation__link-wrapper {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
   .navigation {
     justify-content: start;
+    flex-direction: row;
   }
 
   .navigation__link-wrapper {
     margin-left: auto;
-    display: flex;
   }
 
   .navigation__logo {
     margin: 0 0 0 16px;
+    display: flex;
   }
 }
 </style>

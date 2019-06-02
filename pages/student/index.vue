@@ -7,17 +7,17 @@
     <div class="profile">
       <img class="profile__image" src="~/assets/user.png" alt="User" />
 
-      <p class="profile__name">José Carlos</p>
+      <p class="profile__name">Renan Ferreira</p>
 
       <div class="profile__info">
         <div class="profile__text-wrapper">
           <p class="profile__text profile__text--big">
-            Status: Apto à Estagiar
+            Status: Apto a Estagiar
           </p>
         </div>
 
         <div class="profile-text2-wrapper">
-          <p class="profile-text2">Média: 8,6</p>
+          <p class="profile-text2">Média: 9,1</p>
         </div>
 
         <div class="profile-text2-wrapper">

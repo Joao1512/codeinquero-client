@@ -15,7 +15,11 @@
       Encontre uma bolsa com Estágio Garantido!
     </p>
     <p class="breadcrumb" v-if="currentCourseSelected">
-      {{ this.$store.state.currentCourse.title }}
+      {{
+        `${this.$store.state.currentCourse.university} - ${
+          this.$store.state.currentCourse.title
+        }`
+      }}
     </p>
   </div>
 </template>

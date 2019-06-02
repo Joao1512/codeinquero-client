@@ -44,7 +44,7 @@
     flex-direction: row;
     font-family: Roboto;
     font-style: normal;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: normal;
     font-size: 12px;
     color: #5A5A5A;

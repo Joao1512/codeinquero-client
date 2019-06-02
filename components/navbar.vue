@@ -27,7 +27,6 @@
 </script>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
   .header__content {
     display: flex;

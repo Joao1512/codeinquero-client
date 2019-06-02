@@ -83,9 +83,6 @@
         <p class="want_this_estagio-text">Quero Estágio</p>
       </div>
     </div>
-    <div class="see_outras_options">
-      <p class="see_outras_options-text">Ver outras opções para este curso</p>
-    </div>
     <div class="final"></div>
   </div>
 </template>
@@ -455,30 +452,8 @@
     color: #FFFFFF;
   }
 
-  .see_outras_options {
-    z-index:-1;
-    position: absolute;
-    width: 330px;
-    height: 107px;
-    background: #ffffff;
-    border: 0.5px solid rgba(0, 0, 0, 0.44);
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin: -40px 0 20px 15px;
-  }
-
-  .see_outras_options-text {
-    margin-top: 65px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    color: #C28A1B;
-  }
-
   .final {
-    height: 50px;
+    height: 20px;
   }
 
 </style>

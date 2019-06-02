@@ -16,12 +16,20 @@
       </div>
     </div>
       <div class="container">
-        <div class="card">
-          <img class="calendar" src="~/assets/calendar.png">
-          <div style="color: #7B7B7B;font-family: Roboto;font-style: normal;font-weight: normal;font-size: 14px;line-height: 16px;margin-left:50px;margin-top:-32px;margin-bottom:30px;"> 2º semestre de 2019</div>
+        <div class="card-full">
+            <img class="calendar" src="~/assets/calendar.png">
+            <div style="color: #7B7B7B;font-family: Roboto;font-style: normal;font-weight: normal;font-size: 14px;line-height: 16px;margin-left:50px;margin-top:-32px;margin-bottom:30px;"> 2º semestre de 2019</div>
+        </div>
+        <div class="card-full">
+          <img class="calendar" src="~/assets/school.png">
+          <div style="color: #7B7B7B;font-family: Roboto;font-style: normal;font-weight: normal;font-size: 14px;line-height: 16px;margin-left:50px;margin-top:-32px;margin-bottom:30px;"> Asa Sul - Brasília</div>
+        </div>
+
+        <div class="card-full-large">
+          <div class="item-card-title">Ciência da Computação</div>
+          <div class="item-card-title">Bacharelado (graduação)</div>
         </div>
       </div>
-
   </div>
 </template>
 
@@ -54,7 +62,24 @@
     min-width: 155px;
 
   }
-
+    .card-full{
+    border-radius:10px;
+    margin-top: 32px;
+    margin-left:21px;
+    background-color:white;
+    min-width: 155px;
+    min-height:40px;
+  }
+    .card-full-large{
+    display:flex;
+    flex-direction: column;
+    border-radius:10px;
+    margin-top: 32px;
+    margin-left:21px;
+    background-color:white;
+    min-width: 155px;
+    min-height:457px;
+  }
   .img{
     margin-top:18px;
     margin-left:13px;
@@ -90,8 +115,16 @@
     line-height: 14px;
     color: #7B7B7B;
   }
-  .title{
-    color:black;
+  .item-card-title{
+    padding:17px 0 0 10px;
+    margin-left:10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: rgba(0, 0, 0, 0.62);
   }
   .container{
     max-width: 360px;

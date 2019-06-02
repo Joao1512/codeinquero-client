@@ -1,20 +1,18 @@
 <template>
   <div>
-    <div class="space_navbar">
-      <p class="navbar__title">Unip</p>
-    </div>
-    <router-link class="router" v-bind:to="'/'"
-      ><div class="bolsa__title">
-        <img class="bolsa__arrow-img" src="~/assets/right-arrow.png" />
-        <p class="bolsa__title-text">Cursos e bolsas na unip</p>
-      </div></router-link
-    >
+    <nuxt-link class="footer__link" to="/">
+      <div class="discount__title">
+        <img class="discount__arrow" src="~/assets/right-arrow.png" alt="Arrow"/>
+        <p class="discount__title">Cursos e bolsas na UNIP</p>
+      </div>
+    </nuxt-link>
+
     <p class="bolsa__subtitle-text">Ciência da Computação na UNIP</p>
 
     <div class="content">
       <div class="cards__wrapper">
         <div class="card">
-          <img class="img2" src="~/assets/unip1.png" />
+          <img class="img2" src="~/assets/unip_logo.png" />
         </div>
         <div class="card">
           <div class="star_row">
@@ -62,63 +60,44 @@
   </div>
 </template>
 
-<style>
-.bolsa__title {
+<style scoped>
+.discount__title {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 0 0 10px;
 }
-.bolsa__arrow-img {
+
+.discount__arrow {
   width: 18px;
   height: 18px;
   margin-right: 5px;
 }
-.bolsa__title-text {
-  font-family: Roboto;
+
+.discount__title {
   font-style: normal;
   font-size: 12px;
   text-transform: uppercase;
   color: rgba(90, 90, 90, 0.8);
 }
-.router {
+
+.footer__link {
   text-decoration: none;
 }
+
 .bolsa__subtitle-text {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   color: #000000;
   margin-left: 15px;
 }
-.space_navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  height: 49px;
-  background-color: #18acc4;
-  max-width: 100vw;
-}
-.navbar__title {
-  font-family: Roboto;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ffffff;
-  margin-left: 20px;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100vw;
+  max-width: 100%;
   height: 518px;
   background-color: #000000;
 }
@@ -154,7 +133,6 @@
 
 .nota {
   margin-left: 6px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -166,7 +144,6 @@
 }
 
 .n_avaliacoes {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -194,7 +171,6 @@
 }
 
 .card__semester-title {
-  font-family: Roboto;
   font-style: normal;
   font-size: 14px;
   color: #7b7b7b;
@@ -226,7 +202,6 @@
 }
 
 .card__details-title {
-  font-family: Roboto;
   font-style: normal;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.62);
@@ -234,7 +209,6 @@
 
 .card__details-subtitle {
   margin-top: -10px;
-  font-family: Roboto;
   font-style: normal;
   font-size: 10px;
   color: rgba(0, 0, 0, 0.62);
@@ -249,7 +223,6 @@
 }
 
 .card__details-types1-title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -258,11 +231,5 @@
 </style>
 
 <script>
-export default {
-  data: function(){
-    return {
-      name: "Rafael"
-    }
-  }
-};
+export default {};
 </script>

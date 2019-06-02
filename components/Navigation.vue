@@ -4,37 +4,17 @@
       <img class="navigation__logo" src="~/assets/logo.png" />
     </nuxt-link>
     <div class="navigation__link-wrapper">
-      <nuxt-link class="navigation__link" v-for="item in items" :to="item.path">
-        <span v-if="item.path !== '/'">{{ item.name }}</span>
+      <nuxt-link
+        class="navigation__link"
+        v-for="(item, index) in items[0].path === '/' ? items : items.reverse()"
+        :to="item.path"
+        :key="index"
+      >
+        {{ item.name }}
       </nuxt-link>
     </div>
   </div>
 </template>
-
-<script>
-import routeLabels from "~/plugins/routeLabels";
-
-export default {
-  name: "Navigation",
-  created() {
-    this.$router.options.routes.forEach(route => {
-      const label = routeLabels[route.name];
-
-      if (label) {
-        this.items.push({
-          name: label,
-          path: route.path
-        });
-      }
-    });
-  },
-  data() {
-    return {
-      items: []
-    };
-  }
-};
-</script>
 
 <style scoped>
 .navigation {
@@ -46,8 +26,11 @@ export default {
 }
 
 .navigation__link {
+  color: #000000;
+  padding: 0 8px;
   line-height: 49px;
-  margin: 0 8px;
+  margin: 0 16px 0 0;
+  text-decoration: none;
 }
 
 .navigation__logo {
@@ -56,13 +39,48 @@ export default {
 }
 
 .navigation__link-wrapper {
-  margin-left: auto;
-  display: flex;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
   .navigation {
     justify-content: start;
   }
+
+  .navigation__link-wrapper {
+    margin-left: auto;
+    display: flex;
+  }
+
+  .navigation__logo {
+    margin: 0 0 0 16px;
+  }
 }
 </style>
+
+<script>
+import routeLabels from "~/plugins/routeLabels";
+
+export default {
+  name: "Navigation",
+  created() {
+    this.$router.options.routes.forEach(route => {
+      const routeData = routeLabels[route.name];
+
+      if (routeData) {
+        if (routeData.navigable) {
+          this.items.push({
+            name: routeData.label,
+            path: route.path
+          });
+        }
+      }
+    });
+  },
+  data() {
+    return {
+      items: []
+    };
+  }
+};
+</script>

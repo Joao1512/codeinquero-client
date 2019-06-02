@@ -1,22 +1,86 @@
 <template>
-  <div>
-    <div class="space_navbar">
-      <p class="navbar__title">Encontre a sua bolsa de estudo</p>
+  <div class="page">
+    <div class="content">
+      <p class="content__title">Bolsas de Estudo com Estágio Garantido</p>
+      <div class="content__cards">
+        <div class="content__card-wrapper">
+          <UniversityCard class="content__university-card"></UniversityCard>
+        </div>
+      </div>
     </div>
-    <p class="content__title">Algumas bolsas de estudo em sua região</p>
-    <div class="content__wrapper">
-      <UniversityCard></UniversityCard>
-    </div>
-    <div class="ver__todasfacul">
+    <div class="footer">
       <a
-        class="router"
+        class="footer__link"
+        target="_blank"
         href="https://querobolsa.com.br/faculdades-e-universidades"
-        ><p class="ver__todasfacul-title">Veja todas as faculdades</p></a
       >
-      <img class="ver__todasfacul-img" src="~/assets/right-arrow.png" />
+        Veja todas as faculdades
+      </a>
+      <img class="footer__link-img" src="~/assets/right-arrow.png" />
     </div>
   </div>
 </template>
+
+<style scoped>
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__title {
+  color: #de9e1f;
+  font-weight: 400;
+  max-width: 250px;
+  margin: 20px auto;
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: Roboto, serif;
+}
+
+.footer {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer__link-img {
+  width: 10px;
+  height: 9px;
+  margin-left: 5px;
+  transform: rotate(180deg);
+}
+
+.footer__link {
+  color: #de9e1f;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Roboto, serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .content__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .content__card-wrapper {
+    margin-bottom: 25px;
+    flex: 1 0 21%;
+  }
+
+  .content__university-card {
+    max-width: 330px;
+  }
+}
+</style>
 
 <script>
 import UniversityCard from "~/components/UniversityCard.vue";
@@ -27,64 +91,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.space_navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  height: 49px;
-  background-color: #18acc4;
-  max-width: 100vw;
-}
-.navbar__title {
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-left: 20px;
-}
-body {
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
-}
-.content__wrapper {
-  display: flex;
-  flex-direction: column;
-  max-width: 100vw;
-}
-.content__title {
-  font-family: Roboto;
-  font-style: normal;
-  max-width: 250px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 20px auto;
-  color: #de9e1f;
-  font-weight: 400;
-}
-.ver__todasfacul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.ver__todasfacul-title {
-  font-family: Roboto;
-  font-style: normal;
-  color: #de9e1f;
-}
-.ver__todasfacul-img {
-  width: 10px;
-  height: 9px;
-  margin-left: 5px;
-  transform: rotate(180deg);
-}
-.router {
-  text-decoration: none;
-}
-</style>

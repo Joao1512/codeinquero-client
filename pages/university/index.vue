@@ -58,10 +58,17 @@
 
   .profile {
     display: flex;
+    margin: 20px auto;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 360px;
+    height: 400px;
+    background-color: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
   }
 
   .profile__image {

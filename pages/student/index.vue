@@ -16,12 +16,12 @@
           </p>
         </div>
 
-        <div class="profile__text-wrapper">
-          <p class="profile__text">Média: 8,6</p>
+        <div class="profile-text2-wrapper">
+          <p class="profile-text2">Média: 8,6</p>
         </div>
 
-        <div class="profile__text-wrapper">
-          <p class="profile__text">Frequência: 93%</p>
+        <div class="profile-text2-wrapper">
+          <p class="profile-text2">Frequência: 93%</p>
         </div>
 
         <div class="profile__text-wrapper">
@@ -55,10 +55,17 @@
 
 .profile {
   display: flex;
+  margin: 20px auto;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 370px;
+  height: 420px;
+  background-color: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .profile__image {
@@ -84,6 +91,26 @@
 
 .profile__text-wrapper {
   flex: 1 0 50%;
+}
+
+.profile-text2-wrapper {
+  flex: 1 0 50%;
+}
+
+.profile-text2 {
+  text-decoration: none;
+  width: 120px;
+  display: flex;
+  color: #ffffff;
+  margin: 10px auto;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 23px;
+  padding: 10px 15px;
+  background: #05869b;
+  border-radius: 10px;
+  justify-content: center;
 }
 
 .profile__text {

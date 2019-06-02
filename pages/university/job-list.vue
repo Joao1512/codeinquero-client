@@ -1,8 +1,5 @@
 <template>
   <div>
-    <section class="container header column">
-      <div class="header__title">QUERO ESTÁGIO - VAGAS ANUNCIADAS</div>
-    </section>
     <nuxt-link class="router" to="/university"
       ><div class="bolsa__title">
         <img class="bolsa__arrow-img" src="~/assets/right-arrow.png" />
@@ -88,11 +85,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 5px auto;
+  margin: -40px auto 5px auto;
 }
 
 .title__vagas-text {
-  margin-top: 25px;
+  margin-top: 60px;
   text-transform: uppercase;
   font-family: Roboto;
   font-style: normal;
@@ -111,7 +108,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 0 0 10px;
+  margin: 15px 0 0 15px;
 }
 .bolsa__arrow-img {
   width: 18px;
@@ -146,7 +143,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 300px;
   height: 70px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -161,7 +158,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 300px;
   height: 70px;
   background-color: #05a9c4;
   border-radius: 10px;
@@ -196,10 +193,6 @@
   font-size: 14px;
 }
 
-.header {
-  align-items: stretch;
-}
-
 .content_wrapper {
   display: flex;
   flex-direction: column;
@@ -217,14 +210,14 @@
 }
 
 .divider__vagas {
-  margin: 10px auto 0 auto;
-  width: 85vw;
+  margin: 20px auto;
+  width: 300px;
   border: 0.5px solid #808080;
 }
 
 .divider__vagas2 {
-  margin: 0 auto 0 auto;
-  width: 40vw;
+  margin: 20px auto;
+  width: 300px;
   border: 0.5px solid #808080;
 }
 
@@ -238,16 +231,6 @@
   display: flex;
   flex-direction: row;
   margin: 0 10px;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
 }
 
 input {

@@ -107,13 +107,17 @@
             <div class="divider__estagio"></div>
             <div class="estagio__copy">
               <p class="estagio__copy-text">O estágio faz parte do processo de formação de todo o curso de graduação, e
-              auxilia o estudante a se preparar melhor para o futuro profissional que o espera. Tendo como principal
-              objetivo colocar em prática todo o conhecimento teórico adquirido durante a faculdade. Com o Quero Estágio
-              VOCÊ tem o SEU estágio GARANTIDO na sua faculdade tão desejada, não deixe essa oportunidade passar e GARANTA já!</p>
+                auxilia o estudante a se preparar melhor para o futuro profissional que o espera. Tendo como principal
+                objetivo colocar em prática todo o conhecimento teórico adquirido durante a faculdade. Com o Quero
+                Estágio
+                VOCÊ tem o SEU estágio GARANTIDO na sua faculdade tão desejada, não deixe essa oportunidade passar e
+                GARANTA já!</p>
             </div>
-            <div class="garanta_seu_estagio">
-              <p class="garanta_seu_estagio-title">Garantir o MEU estágio</p>
-            </div>
+            <a class="garantaestagiobtn" href="https://querobolsa.com.br/login">
+              <div class="garanta_seu_estagio">
+                <p class="garanta_seu_estagio-title">Garantir o MEU estágio</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -142,6 +146,10 @@
     text-align: left;
     background: rgba(0, 0, 0, .9);
     transition: opacity .25s ease;
+  }
+
+  .garantaestagiobtn {
+    text-decoration: none;
   }
 
   .modal__logo-div {

@@ -5,6 +5,10 @@
     <div class="content__wrapper">
       <card__highschool></card__highschool>
     </div>
+    <div class="ver__todasfacul">
+      <a class="router" href="https://querobolsa.com.br/faculdades-e-universidades"><p class="ver__todasfacul-title">Veja todas as faculdades</p></a>
+      <img class="ver__todasfacul-img" src="~/assets/right-arrow.png">
+    </div>
   </div>
 </template>
 
@@ -40,5 +44,25 @@
     margin: 20px auto;
     color: #DE9E1F;
     font-weight: 400;
+  }
+  .ver__todasfacul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ver__todasfacul-title {
+    font-family: Roboto;
+    font-style: normal;
+    color: #DE9E1F;
+  }
+  .ver__todasfacul-img {
+    width: 10px;
+    height: 9px;
+    margin-left: 5px;
+    transform: rotate(180deg);
+  }
+  .router {
+    text-decoration: none;
   }
 </style>

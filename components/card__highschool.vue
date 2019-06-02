@@ -10,6 +10,7 @@
       <div class="line__divider"></div>
       <div class="bolsas__ate"><p>Bolsas de até <font color="#10C979">80%</font></p></div>
       <div class="a_partir"><p>A partir de <font color="#10C979">R$ 137</font><font size="2" color="#10C979">/mês</font></p></div>
+      <router-link v-bind:to="'detail_bolsa'"><button class="detalhes__bolsa">Ver detalhes da bolsa</button></router-link>
     </div>
 </template>
 
@@ -26,7 +27,7 @@
     margin: 0 auto;
     align-items: center;
     width: 300px;
-    height: 320px;
+    height: 390px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
@@ -76,5 +77,18 @@
     font-family: Roboto;
     font-style: normal;
     color: #888888;
+  }
+
+  .detalhes__bolsa {
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #C28A1B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 250px;
+    height: 60px;
+    font-family: Roboto;
+    font-style: normal;
+    color: #C28A1B;
   }
 </style>

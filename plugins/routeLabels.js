@@ -11,7 +11,17 @@ export default {
   },
   "student-internship-list": {
     label: "Lista de Estágios",
-    path: "",
+    path: "/student/internship-list",
+    navigable: false
+  },
+  "university-job-form": {
+    label: "Adicionar Vaga de Estágio",
+    path: "/university/job-form",
+    navigable: false
+  },
+  "university-student-list": {
+    label: "Alunos Matriculados no QueroEstágio",
+    path: "/university/student-list",
     navigable: false
   },
   university: {

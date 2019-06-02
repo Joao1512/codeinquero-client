@@ -43,6 +43,7 @@
 
 <style scoped>
 .card__image-wrapper {
+  background-color: #ffffff;
   width: 300px;
   height: 400px;
   display: flex;

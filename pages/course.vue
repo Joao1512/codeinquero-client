@@ -70,11 +70,14 @@
         <p class="mensalidade__free-text">Mensalidade de julho grátis</p>
       </div>
       <div class="see_all_benefits">
-        <p class="benefits__title">Ver todos os benefícios</p>
+        <a
+          href="https://querobolsa.com.br/login"
+          target="_blank"
+          class="benefits__title"
+        >
+          Ver todos os benefícios
+        </a>
         <img class="benefits__img" src="~/assets/right-arrow.png" />
-      </div>
-      <div class="want_this_bolsa">
-        <p class="want_this_bolsa-text">Quero esta Bolsa</p>
       </div>
       <div class="regras_e_avisos">
         <p class="regras_e_avisos-text">Regras e Avisos</p>
@@ -118,7 +121,11 @@
                 oportunidade passar e GARANTA já!
               </p>
             </div>
-            <a class="garantaestagiobtn" href="https://querobolsa.com.br/login">
+            <a
+              class="garantaestagiobtn"
+              target="_blank"
+              href="https://querobolsa.com.br/login"
+            >
               <div class="garanta_seu_estagio">
                 <p class="garanta_seu_estagio-title">Garantir o MEU estágio</p>
               </div>

@@ -15,9 +15,6 @@
         <div class="content__card-wrapper">
           <UniversityCard class="content__university-card"></UniversityCard>
         </div>
-        <div class="content__card-wrapper">
-          <UniversityCard class="content__university-card"></UniversityCard>
-        </div>
       </div>
     </div>
   </div>

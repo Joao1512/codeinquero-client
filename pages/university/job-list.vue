@@ -3,11 +3,11 @@
     <section class="container header column">
       <div class="header__title">QUERO ESTÁGIO - VAGAS ANUNCIADAS</div>
     </section>
-    <router-link class="router" v-bind:to="'/mainempregador'"
+    <nuxt-link class="router" to="/university"
       ><div class="bolsa__title">
         <img class="bolsa__arrow-img" src="~/assets/right-arrow.png" />
         <p class="bolsa__title-text">Voltar para área principal</p>
-      </div></router-link
+      </div></nuxt-link
     >
     <div class="title__vagas">
       <p class="title__vagas-text">Suas vagas anunciadas</p>

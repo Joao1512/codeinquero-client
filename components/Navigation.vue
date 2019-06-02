@@ -18,6 +18,7 @@
 
 <style scoped>
 .navigation {
+  background-color: #ffffff;
   width: 100%;
   display: flex;
   flex-direction: row;

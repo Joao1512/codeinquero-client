@@ -11,7 +11,9 @@
 
       <div class="profile__info">
         <div class="profile__text-wrapper">
-          <p class="profile__text profile__text--big">Status: Apto</p>
+          <p class="profile__text profile__text--big">
+            Status: Apto à Estagiar
+          </p>
         </div>
 
         <div class="profile__text-wrapper">
@@ -26,8 +28,9 @@
           <nuxt-link
             to="/student/internship-list"
             class="profile__text profile__text--big"
-            >Solicitar Estágio</nuxt-link
           >
+            Solicitar Estágio
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -84,6 +87,7 @@
 }
 
 .profile__text {
+  text-decoration: none;
   width: 120px;
   display: flex;
   color: #ffffff;

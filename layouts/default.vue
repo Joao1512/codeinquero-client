@@ -1,24 +1,47 @@
 <template>
   <div>
-    <navbar></navbar>
-    <nuxt/>
+    <Navigation></Navigation>
+    <Breadcrumb></Breadcrumb>
+    <nuxt />
   </div>
 </template>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("~/static/cssreset.css");
 
-  body {
-    margin: 0;
-    padding: 0;
-  }
+*,
+div {
+  font-family: Roboto, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
 </style>
 
 <script>
-  import navbar from '~/components/navbar.vue'
-  export default {
-    components: {
-      navbar
-    }
+import Navigation from "~/components/Navigation.vue";
+import Breadcrumb from "../components/Breadcrumb";
+
+export default {
+  head() {
+    return {
+      title: "QueroEstágio",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Encontre bolsas na faculdade com estágio garantido!"
+        }
+      ]
+    };
+  },
+  components: {
+    Breadcrumb,
+    Navigation
   }
+};
 </script>

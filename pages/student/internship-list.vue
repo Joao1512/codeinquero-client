@@ -1,21 +1,23 @@
 <template>
   <div>
-    <section class="container stretch column">
-      <div class="item">QUERO ESTÁGIO - VAGAS ANUNCIADAS</div>
-    </section>
-    <router-link class="router" v-bind:to="'/mainempregador'"><div class="bolsa__title">
-      <img class="bolsa__arrow-img" src="~/assets/right-arrow.png">
-      <p class="bolsa__title-text">Voltar para área principal</p>
-    </div></router-link>
+    <nuxt-link class="router" to="/university"
+    >
+      <div class="bolsa__title">
+        <img class="bolsa__arrow-img" src="~/assets/right-arrow.png"/>
+        <p class="bolsa__title-text">Voltar para área principal</p>
+      </div>
+    </nuxt-link
+    >
     <div class="title__vagas">
-      <p class="title__vagas-text">Suas vagas anunciadas</p>
+      <p class="title__vagas-text">Garanta seu Estágio</p>
     </div>
     <div class="tabs">
       <div class="tab">
-        <input type="checkbox" id="chck1">
+        <input type="checkbox" id="chck1"/>
         <label class="tab-label" for="chck1">Desenvolvedor Fullstack</label>
         <div class="tab-content">
           <div class="content_wrapper">
+            <img class="content__logo" src="~/assets/unip_logo.png">
             <div class="content_wrapper-header">
               <div class="vagas_totais">
                 <p class="vagas_totais-title">Vagas totais:</p>
@@ -36,16 +38,16 @@
             <div class="tempo__anunciado">
               <p class="tempo__anunciado-text">Tempo anunciado:</p>
               <p class="tempo__anunciado-days">18 dias</p>
-              <img class="tempo__anunciado-timer" src="~/assets/timer.svg">
+              <img class="tempo__anunciado-timer" src="~/assets/timer.svg"/>
             </div>
             <div class="cancelar_anuncio">
-              <p class="cancelar_anuncio-text">Cancelar anúncio</p>
+              <p class="cancelar_anuncio-text">Garantir Estágio</p>
             </div>
           </div>
         </div>
       </div>
       <div class="tab">
-        <input type="checkbox" id="chck2">
+        <input type="checkbox" id="chck2"/>
         <label class="tab-label" for="chck2">Designer Gráfico</label>
         <div class="tab-content">
           <div class="content_wrapper">
@@ -69,7 +71,7 @@
             <div class="tempo__anunciado">
               <p class="tempo__anunciado-text">Tempo anunciado:</p>
               <p class="tempo__anunciado-days">10 dias</p>
-              <img class="tempo__anunciado-timer" src="~/assets/timer.svg">
+              <img class="tempo__anunciado-timer" src="~/assets/timer.svg"/>
             </div>
             <div class="cancelar_anuncio">
               <p class="cancelar_anuncio-text">Cancelar anúncio</p>
@@ -81,22 +83,16 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: "bthac_vagasanunciadas"
-  }
-</script>
-
-<style postcss>
+<style scoped>
   .title__vagas {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5px auto;
+    margin: -40px auto 5px auto;
   }
 
   .title__vagas-text {
-    margin-top: 25px;
+    margin-top: 60px;
     text-transform: uppercase;
     font-family: Roboto;
     font-style: normal;
@@ -115,7 +111,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 0 10px;
+    margin: 15px 0 0 15px;
   }
   .bolsa__arrow-img {
     width: 18px;
@@ -143,16 +139,20 @@
   }
 
   .cancelar_anuncio {
-    background-color: #c40404;
+    background-color: #0a7447;
     border-radius: 10px;
     margin: 10px auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 300px;
     height: 70px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  .content__logo {
+    margin: 20px auto 30px auto;
   }
 
   .cancelar_anuncio-text {
@@ -165,7 +165,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80vw;
+    width: 300px;
     height: 70px;
     background-color: #05a9c4;
     border-radius: 10px;
@@ -177,7 +177,7 @@
     color: #ffffff;
   }
 
-  .tempo__anunciado-days{
+  .tempo__anunciado-days {
     font-size: 16px;
     font-weight: 700;
     margin-left: 5px;
@@ -200,10 +200,6 @@
     font-size: 14px;
   }
 
-  .stretch {
-    align-items: stretch;
-  }
-
   .content_wrapper {
     display: flex;
     flex-direction: column;
@@ -212,29 +208,29 @@
 
   .vagas_totais-number {
     margin: auto 5px;
-    color: #7B7B7B;
+    color: #7b7b7b;
   }
 
   .vagas_totais-number2 {
     margin: auto 5px;
-    color: #0A7447;
+    color: #0a7447;
   }
 
   .divider__vagas {
-    margin: 10px auto 0 auto;
-    width: 85vw;
+    margin: 20px auto;
+    width: 300px;
     border: 0.5px solid #808080;
   }
 
   .divider__vagas2 {
-    margin: 0 auto 0 auto;
-    width: 40vw;
+    margin: 20px auto;
+    width: 300px;
     border: 0.5px solid #808080;
   }
 
   .divider_vagas {
     height: 40px;
-    border: 0.5px solid #C1C1C1;
+    border: 0.5px solid #c1c1c1;
     margin: 0 auto;
   }
 
@@ -242,16 +238,6 @@
     display: flex;
     flex-direction: row;
     margin: 0 10px;
-  }
-
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-  }
-
-  .column {
-    flex-direction: column;
   }
 
   input {
@@ -293,14 +279,14 @@
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    background: #05869B;
+    background: #05869b;
     font-weight: bold;
     cursor: pointer;
     /* Icon */
   }
 
   .tab-label:hover {
-    background: #05869B;
+    background: #05869b;
   }
 
   .tab-label::after {
@@ -308,7 +294,7 @@
     width: 1em;
     height: 1em;
     text-align: center;
-    transition: all .35s;
+    transition: all 0.35s;
   }
 
   .tab-content {
@@ -316,7 +302,7 @@
     padding: 0 1em;
     color: #2c3e50;
     background: white;
-    transition: all .35s;
+    transition: all 0.35s;
   }
 
   .tab-close {
@@ -345,6 +331,8 @@
     max-height: 100vh;
     padding: 1em;
   }
-
-
 </style>
+
+<script>
+  export default {};
+</script>

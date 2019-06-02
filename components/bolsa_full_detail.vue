@@ -79,8 +79,43 @@
       <div class="regras_e_avisos">
         <p class="regras_e_avisos-text">Regras e Avisos</p>
       </div>
-      <div class="want_this_estagio">
-        <p class="want_this_estagio-text">Quero Estágio</p>
+      <label class="btn" for="modal-1">
+        <div class="want_this_estagio">
+          <p class="want_this_estagio-text">Quero Estágio</p>
+        </div>
+      </label>
+      <input class="modal-state" id="modal-1" type="checkbox"/>
+      <div class="modal">
+        <label class="modal__bg" for="modal-1"></label>
+        <div class="modal__inner">
+          <label class="modal__close" for="modal-1"></label>
+          <p class="modal__title">Ciência da computação na UNIP - Estágio</p>
+          <p class="modal__subtitle">Venha garantir já o SEU estágio com o Quero Bolsa</p>
+          <div class="modal__logo-div">
+            <img class="modal__logo" src="~/assets/logo_facul.png">
+          </div>
+          <div class="modal__content-estagio">
+            <div class="vagas_estagio">
+              <p class="vagas__estagio-title">Vagas de estágio:</p>
+              <p class="vagas__estagio-number">236</p>
+            </div>
+            <div class="divider__estagio"></div>
+            <div class="tempo__medio">
+              <p class="tempo__medio-title">Tempo médio de contrato:</p>
+              <p class="tempo__medio-number">3 anos</p>
+            </div>
+            <div class="divider__estagio"></div>
+            <div class="estagio__copy">
+              <p class="estagio__copy-text">O estágio faz parte do processo de formação de todo o curso de graduação, e
+              auxilia o estudante a se preparar melhor para o futuro profissional que o espera. Tendo como principal
+              objetivo colocar em prática todo o conhecimento teórico adquirido durante a faculdade. Com o Quero Estágio
+              VOCÊ tem o SEU estágio GARANTIDO na sua faculdade tão desejada, não deixe essa oportunidade passar e GARANTA já!</p>
+            </div>
+            <div class="garanta_seu_estagio">
+              <p class="garanta_seu_estagio-title">Garantir o MEU estágio</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="final"></div>
@@ -95,6 +130,217 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(0, 0, 0, .9);
+    transition: opacity .25s ease;
+  }
+
+  .modal__logo-div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .modal__logo {
+    margin: 20px auto;
+  }
+
+  .modal__content-estagio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vagas_estagio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .vagas__estagio-title {
+    margin-right: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .vagas__estagio-number {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0A7447;
+  }
+
+  .garanta_seu_estagio {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 56px;
+    background: #0A7447;
+    border-radius: 10px;
+  }
+
+  .garanta_seu_estagio-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  .tempo__medio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tempo__medio-title {
+    margin-right: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .tempo__medio-number {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .divider__estagio {
+    margin: 15px auto;
+    width: 194px;
+    border: 1px solid #808080;
+  }
+
+  .estagio__copy {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .estagio__copy-text {
+    font-family: Roboto;
+    text-align: justify;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .modal__subtitle {
+    margin-top: -12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .modal-state {
+    display: none;
+  }
+
+  .modal-state:checked + .modal {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-state:checked + .modal .modal__inner {
+    top: 0;
+  }
+
+  .modal__inner {
+    transition: top .25s ease;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em 2em;
+    height: 50%;
+  }
+
+  .modal__close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
+  }
+
+  .modal__close:after,
+  .modal__close:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5em;
+    background: #ccc;
+    display: block;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -3px 0 0 -1px;
+    top: 0;
+  }
+
+  .modal__close:hover:after,
+  .modal__close:hover:before {
+    background: #aaa;
+  }
+
+  .modal__close:before {
+    transform: rotate(-45deg);
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .modal__inner {
+      width: 90%;
+      height: 90%;
+      box-sizing: border-box;
+    }
+  }
 
   .content {
     display: flex;
@@ -398,7 +644,7 @@
     background: #0A7447;
     border-radius: 10px;
     height: 56px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
   .want_this_bolsa-text {
@@ -421,7 +667,7 @@
     box-sizing: border-box;
     border-radius: 10px;
     height: 56px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
 
   .regras_e_avisos-text {
@@ -449,11 +695,103 @@
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .final {
     height: 20px;
+  }
+
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    background: rgba(0, 0, 0, .9);
+    transition: opacity .25s ease;
+  }
+
+  .modal__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .modal-state {
+    display: none;
+  }
+
+  .modal-state:checked + .modal {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-state:checked + .modal .modal__inner {
+    top: 0;
+  }
+
+  .modal__inner {
+    transition: top .25s ease;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em 2em;
+    height: 50%;
+  }
+
+  .modal__close {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
+  }
+
+  .modal__close:after,
+  .modal__close:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5em;
+    background: #ccc;
+    display: block;
+    transform: rotate(45deg);
+    left: 50%;
+    margin: -3px 0 0 -1px;
+    top: 0;
+  }
+
+  .modal__close:hover:after,
+  .modal__close:hover:before {
+    background: #aaa;
+  }
+
+  .modal__close:before {
+    transform: rotate(-45deg);
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .modal__inner {
+      width: 90%;
+      height: 90%;
+      box-sizing: border-box;
+    }
   }
 
 </style>

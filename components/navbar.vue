@@ -1,6 +1,6 @@
 <template>
   <div class="header__content">
-    <img class="quero__icon" src="~/assets/quero_icon.png">
+    <router-link v-bind:to="'/'"><img class="quero__icon" src="~/assets/quero_icon.png"></router-link>
     <div class="header__content-icons">
       <div class="header__content-div">
         <img class="header__content-iconsearch" src="~/assets/search_icon.png">

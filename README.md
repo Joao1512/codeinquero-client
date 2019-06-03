@@ -1,3 +1,4 @@
+Repositório para projeto do hackathon 2019 da Quero Educação
 # codeinquero-client
 
 > CodeInQuero
